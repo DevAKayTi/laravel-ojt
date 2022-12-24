@@ -9,8 +9,11 @@ Route::get('/', [Controller::class, 'index']);
 Route::get('/about', [Controller::class, 'about']);
 Route::get('/service', [Controller::class, 'service']);
 Route::get('/blog', [Controller::class, 'blog']);
+Route::get('/portfolio', [Controller::class, 'portfolio']);
+Route::get('/team', [Controller::class, 'team']);
 Route::get('/contact', [Controller::class, 'contact']);
 
-Route::get('/blog/{id}/author/{name}', function ($id, $author) {
-    return "blog " . $id . " author is " . $author;
-});
+
+// Route::get('/blog/{id}/author/{name}', function ($id, $author) {
+//     return "blog " . $id . " author is " . $author;
+// });

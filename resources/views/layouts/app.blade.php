@@ -2,134 +2,150 @@
 <html lang="en">
 
 <head>
-    <!-- basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>A World</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{ url('asset/css/bootstrap.min.css') }}">
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="{{ url('asset/css/style.css') }}">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="{{ url('asset/css/responsive.css') }}">
-    <!-- fevicon -->
-    <link rel="icon" href="{{ url('asset/images/fevicon.png') }}" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{ url('asset/css/jquery.mCustomScrollbar.min.css') }}">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
-    <!-- owl stylesheets -->
-    <link rel="stylesheet" href="{{ url('asset/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ url('asset/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-        media="screen">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Moderna Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!-- header section start -->
-    <div class="header_section">
-        <div class="header_main">
-            <div class="mobile_menu">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="logo_mobile"><a href="index.html"><img src="{{ url('asset/images/logo.png') }}"></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/about') }}">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/service') }}">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/blog') }}">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="{{ url('/contact') }}">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="container-fluid">
-                <div class="logo"><a href="{{ url('/') }}"><img src="{{ url('asset/images/logo.png') }}"></a>
-                </div>
-                <div class="menu_main">
-                    <ul>
-                        <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="{{ url('/about') }}">About</a></li>
-                        <li><a href="{{ url('/service') }}">Services</a></li>
-                        <li><a href="{{ url('/blog') }}">Blog</a></li>
-                        <li><a href="{{ url('/contact') }}">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
+
+  <!-- ======= Header ======= -->
+  @include('layouts.header')
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  @yield('content')
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
         </div>
-        @yield('banner')
+      </div>
     </div>
-    <!-- header section end -->
-    @yield('content')
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="container">
-            <div class="input_btn_main">
-                <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
-                <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Moderna</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-            <div class="location_main">
-                <div class="call_text"><img src="{{ url('asset/images/call-icon.png') }}"></div>
-                <div class="call_text"><a href="#">Call +01 1234567890</a></div>
-                <div class="call_text"><img src="{{ url('asset/images/mail-icon.png') }}"></div>
-                <div class="call_text"><a href="#">demo@gmail.com</a></div>
-            </div>
-            <div class="social_icon">
-                <ul>
-                    <li><a href="#"><img src="{{ url('asset/images/fb-icon.png') }}"></a></li>
-                    <li><a href="#"><img src="{{ url('asset/images/twitter-icon.png') }}"></a></li>
-                    <li><a href="#"><img src="{{ url('asset/images/linkedin-icon.png') }}"></a></li>
-                    <li><a href="#"><img src="{{ url('asset/images/instagram-icon.png') }}"></a></li>
-                </ul>
-            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html
-                    Templates</a></p>
-        </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="{{ url('asset/js/jquery.min.js') }}"></script>
-    <script src="{{ url('asset/js/popper.min.js') }}"></script>
-    <script src="{{ url('asset/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url('asset/js/jquery-3.0.0.min.js') }}"></script>
-    <script src="{{ url('asset/js/plugin.js') }}"></script>
-    <!-- sidebar -->
-    <script src="{{ url('asset/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ url('asset/js/custom.js') }}"></script>
-    <!-- javascript -->
-    <script src="{{ url('asset/js/owl.carousel.js') }}"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

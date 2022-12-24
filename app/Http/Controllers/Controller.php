@@ -13,7 +13,7 @@ class Controller extends BaseController
 
     public function index()
     {
-        return view('home')->with(['name' => 'Bang Bang']);
+        return view('home');
     }
 
     public function about()
@@ -34,5 +34,15 @@ class Controller extends BaseController
     public function contact()
     {
         return view('contact');
+    }
+
+    public function portfolio()
+    {
+        return view('portfolio');
+    }
+
+    public function team()
+    {
+        return view('team');
     }
 }
