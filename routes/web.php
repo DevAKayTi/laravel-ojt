@@ -13,7 +13,3 @@ Route::get('/portfolio', [Controller::class, 'portfolio']);
 Route::get('/team', [Controller::class, 'team']);
 Route::get('/contact', [Controller::class, 'contact']);
 
-
-// Route::get('/blog/{id}/author/{name}', function ($id, $author) {
-//     return "blog " . $id . " author is " . $author;
-// });
